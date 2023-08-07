@@ -1,0 +1,25 @@
+1. Javascript
+Execution of a program (theory)
+Variables and usage of Variables
+Data types
+operators
+conditional statements
+loops
+execution flow and functions
+scope chain
+closures
+primitive and non primitive variables 
+call by value and call by reference
+this keyword
+
+DOM  (frontend projects)
+
+
+Asynchronous Javascript:
+
+Event loop , callback queue, microtask queue 
+Promises , Promise chaining, async/await 
+REST API
+fetch API
+
+Youtube clone project
