@@ -85,5 +85,109 @@ Identifier declaration rules | variable naming convention
 
 // assignemnt operator
 
-let x = 20;
-x += 10; // x = x + 10
+// let x = 20;
+
+// logical operators
+// &&(and), || (or), !(not)
+
+/**
+ * and
+ * A        B       R
+ * true     true    true
+ * true     false   false
+ * false    true    false
+ * false    false   false
+ * 
+ * or
+ * 
+ * A        B       R
+ * true     true    true
+ * true      false  true
+ * false    true    true
+ * false    false   false
+ * 
+ * not
+ * !true => false
+ * !false => true
+ */
+
+// console.log(false || false)
+
+let a = 20; // number
+let b = "a" ; // string
+// "23" => 23
+// console.log(Number(undefined))
+// arithmatic operators casts type of operands internallyto number type
+// console.log(a * b); // console.log(a * Number(b))
+// number * string => 20 * NaN = NaN
+// console.log(2 * undefined) // 2 * Number(undefined) => 2 * NaN = NaN
+// number * boolean =
+
+// console.log(2 - "-2") // 2 - Number("2") = 2 - 2 = 0
+
+// not all arithmatic operators do the internal typecasting
+// + => behaves as both arithmatic(addition) and concatenation operator
+// console.log(String(undefined), "10", 10)
+// operand
+// 10 => "10"
+// true => "true"
+// undefined => "undefined"
+// 10.2 => "10.2"
+// console.log(2 + "5") // 25
+// string + string 
+// number + number => arith
+// string + x => string + String(x) = concatenanation
+
+// console.log(undefined + "a")
+// x + string => String(undefined) + "10" => "undefined" + "10" = undefined10
+
+// console.log(2 + +"5") // 25 invalid
+
+// console.log(2 + 2 + "2" + 2)
+// 2 + 2 + "2" + 2 => 4 + "2" + 2 = "42" + 2 = 422
+
+// console.log(2 + undefined) // arithmatic
+// 2 + Number(undefined) = 2 + NaN = NaN
+
+
+// string / string
+// console.log(typeof Infinity) //  Number("4") / Number(false) = 4 / 0 = infi
+// NaN, Infinity
+
+// 4 / ( 3 / 0) = 4 * 0 / 3 = 0
+
+// console.log("2" / "4") // 2 / 4 => 0.5
+
+
+// && (and => logical operator)
+
+// console.log(Boolean())
+// console.log("0" && "20")
+// true && x
+// Boolean("10") => true
+
+// a => any
+// b => any
+
+// console.log("2" && 4)
+
+// +, -, *, /, %
+
+// conditional statements
+
+// if("" && 10){ // "" => false
+//     console.log("hello")
+// }
+// else if(undefined || ''){ // "" => falsy
+//     console.log("second")
+// }
+// else if(undefined || (0 + "")){ // undefined || "0" => truthy
+//     console.log("third")
+// }
+// else {
+//     console.log("final")
+// }
+
+// if("0"){ // "0" => truthy
+//     console.log("djjd")
+// }
