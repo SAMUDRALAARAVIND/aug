@@ -146,21 +146,21 @@ Arrays and Objects
 // }
 
 // console.log(a== b);
-let arr = [20, 10, 23]
-//         0    1   2
-let user = { // #300
-    name: "aravind", 
-    age: 22,
-    isAlive: true,
-} ; 
+// let arr = [20, 10, 23]
+// //         0    1   2
+// let user = { // #300
+//     name: "aravind", 
+//     age: 22,
+//     isAlive: true,
+// } ; 
 
-let user1 = {}; // user1 = #500
+// let user1 = {}; // user1 = #500
 
-for(let i in user){
-    user1[i] = user[i]; 
-}
-console.log(user1)
+// for(let i in user){
+//     // i = "name" user1["name"] = user["name"]
+//     user1[i] = user[i]; 
+// }
+// console.log(user1)
 // for(let i in arr) {
 //     console.log(i , arr[i])
 // }
-
