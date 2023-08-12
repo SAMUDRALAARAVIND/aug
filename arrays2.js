@@ -200,3 +200,20 @@ let obj = {} ;
 // console.log(obj)
 
 // console.log(str1.split("$"))
+
+let map = {
+    "Virupaksha Temple": 'The Virupaksha Temple',
+    'Victoria Memorial' : 'Victoria Memorial' ,
+    'Tajmahal' : 'Tajmahal'
+}
+
+let bands = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal']
+// ["Virupaksha Temple' , 'Victoria Memorial', 'Tajmahal']
+
+// ["Tajmahal", "Victoria Memorial", "Virupaksha Temple"]
+// [ map["Tajamahal"], map["Victoria Memorial"], map["Virupaksha Temple"] ]
+//  ["Tajmahal", "Victoria Memorial", "The Virupaksha Temple"]
+
+
+// [4, 2, 12] / => [2, 4, 12]
+// comparision 
