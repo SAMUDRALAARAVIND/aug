@@ -1,0 +1,41 @@
+#sidebar {
+  width: 200px;
+  background-color: gray;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  transition: left 0.3s ease-in;
+}
+.closed {
+  left: -200px;
+}
+.open {
+  left: 0px;
+}
+
+.student {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+tr,
+td,
+th {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 10px;
+}
+
+tr {
+  background-color: blue;
+  color: white;
+}

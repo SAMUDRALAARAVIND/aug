@@ -111,8 +111,8 @@ const firstButton = document.querySelector("#btn");
 //   //   inputElement.value = "naveen";
 // }
 
-const alertContainer = document.getElementById("alert");
+// const alertContainer = document.getElementById("alert");
 
-function closeAlert() {
-  alertContainer.remove();
-}
+// function closeAlert() {
+//   alertContainer.remove();
+// }
