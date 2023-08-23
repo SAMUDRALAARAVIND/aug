@@ -80,7 +80,7 @@
 
 // DOM
 
-const container = document.getElementById("container");
+// const container = document.getElementById("container");
 
-console.log(container.getAttribute("data-abc"));
-container.setAttribute("data-password", "abc@123");
+// console.log(container.getAttribute("data-abc"));
+// container.setAttribute("data-password", "abc@123");
