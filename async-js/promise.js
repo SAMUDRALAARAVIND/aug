@@ -123,19 +123,19 @@ Promise in js is a Object
 
 // console.log(prom);
 
-function supermarket(prices, n, k) {
-  prices.sort((a, b) => a - b);
-  //   [1, 2, 3, 4, 5]
-  console.log(prices);
-  let sum = 0;
-  for (let i = 2; i <= 2 + k - 1 && i < n; i++) {
-    sum += prices[i];
-  }
-  return sum;
-}
+// function supermarket(prices, n, k) {
+//   prices.sort((a, b) => a - b);
+//   //   [1, 2, 3, 4, 5]
+//   console.log(prices);
+//   let sum = 0;
+//   for (let i = 2; i <= 2 + k - 1 && i < n; i++) {
+//     sum += prices[i];
+//   }
+//   return sum;
+// }
 
-let result = supermarket([4, 1, 2, 3, 5], 5, 2);
+// let result = supermarket([4, 1, 2, 3, 5], 5, 2);
 
-// [1, 2, 3, 4, 5]
+// // [1, 2, 3, 4, 5]
 
-console.log(result);
+// console.log(result);
