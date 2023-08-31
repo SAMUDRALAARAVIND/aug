@@ -46,9 +46,14 @@ body {
 }
 
 .video {
-  height: 240px;
+  height: 350px;
   display: flex;
   flex-flow: column;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.video:hover {
+  transform: scale(1.05);
 }
 .thumbnail {
   width: 100%;

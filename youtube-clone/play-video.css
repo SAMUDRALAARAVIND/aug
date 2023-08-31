@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.comment {
+  box-shadow: 2px 2px 4px rgba(202, 200, 200, 0.531);
+  padding: 10px 20px;
+}
+
+.author-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

@@ -28,6 +28,12 @@ function calculateTheTimeGap(publishTime) {
 
   return `${Math.ceil(secondsGap / secondsPerYear)} years ago`;
 }
+
+function navigateToVideoDetails(videoId) {
+  document.cookie = `id=${videoId}; path=/youtube-clone/play-video.html`;
+  window.location.href = "http://127.0.0.1:5500/youtube-clone/play-video.html";
+}
+
 function renderVideosOntoUI(videosList) {
   // videosList will be an array of video objects.
   container.innerHTML = "";
@@ -54,6 +60,11 @@ function renderVideosOntoUI(videosList) {
             } . ${calculateTheTimeGap(video.snippet.publishTime)}</p>
             </div>
         </div>`;
+
+    videoContainer.addEventListener("click", () => {
+      navigateToVideoDetails(video.id.videoId);
+    });
+
     container.appendChild(videoContainer);
   });
 }
@@ -78,7 +89,6 @@ async function getVideoStatistics(videoId) {
   try {
     const response = await fetch(endpoint);
     const result = await response.json();
-    console.log(result);
     return result.items[0].statistics;
   } catch (error) {
     alert("Failed to fetch Statistics for ", videoId);
@@ -109,7 +119,7 @@ async function getVideoStatistics(videoId) {
 
 async function fetchSearchResults(searchString) {
   // searchString will the input entered by the user
-  const endpoint = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=2`;
+  const endpoint = `${baseUrl}/search?key=${apiKey}&q=${searchString}&part=snippet&maxResults=5`;
   try {
     const response = await fetch(endpoint);
     const result = await response.json();
